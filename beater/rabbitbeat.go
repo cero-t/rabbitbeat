@@ -42,7 +42,7 @@ func (bt *Rabbitbeat) Setup(b *beat.Beat) error {
 
 	// Setting default period if not set
 	if bt.Configuration.Rabbitbeat.Period == "" {
-		bt.Configuration.Rabbitbeat.Period = "1s"
+		bt.Configuration.Rabbitbeat.Period = "10s"
 	}
 
 	var err error

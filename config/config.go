@@ -9,4 +9,7 @@ type Config struct {
 
 type RabbitbeatConfig struct {
 	Period string `yaml:"period"`
+	Addresses *[]string `yaml:"hosts"`
+	Username string `yaml:"username"`
+	Password string `yaml:"password"`
 }
